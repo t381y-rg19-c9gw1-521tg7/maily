@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verification</title>
+</head>
+<body>
+  <h2 id="msg">Verifying...</h2>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get("token");
+
+    if (token && localStorage.getItem(token) === "valid") {
+      document.getElementById("msg").innerText = "Account verified successfully.";
+    } else {
+      document.getElementById("msg").innerText = "Invalid or expired token!";
+    }
+  </script>
+</body>
+</html>
