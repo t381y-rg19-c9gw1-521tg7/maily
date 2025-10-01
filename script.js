@@ -1,4 +1,4 @@
-emailjs.init("Brg2JJH4uao28SQ5z"); // Your EmailJS public key
+emailjs.init("Brg2JJH4uao28SQ5z"); // Refreshed because of security (Open-source)
 
 document.getElementById("form").onsubmit = async (e) => {
   e.preventDefault();
